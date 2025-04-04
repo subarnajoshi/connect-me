@@ -12,6 +12,7 @@ import {
 import "./Signup.scss";
 import { useState } from "react";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { AzureOpenAI } from "openai";
 
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -109,7 +110,11 @@ const Signup = () => {
             and <span className="links">Privacy Policies</span> of Connect-me
           </span>
         </div>
-        <Button style={{ width: "10rem" }} variant="contained">
+        <Button 
+          style={{ width: "10rem" }} 
+          variant="contained"
+          onClick={() => {}}
+        >
           Sign up
         </Button>
         <span>
